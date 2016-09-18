@@ -1,0 +1,236 @@
+---
+'01':
+  unofficial_names: Islands
+  translations:
+    en: Islands
+    zh: 離島區
+  geo:
+    latitude: 22.26114
+    longitude: 113.94608
+    min_latitude: 22.26114
+    min_longitude: 113.94608
+    max_latitude: 22.26114
+    max_longitude: 113.94608
+  name: Islands
+'02':
+  unofficial_names: Kwai Tsing
+  translations:
+    en: Kwai Tsing
+    zh: 葵青區
+  geo:
+    latitude: 22.35488
+    longitude: 114.08401
+    min_latitude: 22.35488
+    min_longitude: 114.08401
+    max_latitude: 22.35488
+    max_longitude: 114.08401
+  name: Kwai Tsing
+'03':
+  unofficial_names: North
+  translations:
+    en: North
+    zh: 北區
+  geo:
+    latitude: 22.49471
+    longitude: 114.13812
+    min_latitude: 22.49471
+    min_longitude: 114.13812
+    max_latitude: 22.49471
+    max_longitude: 114.13812
+  name: North
+'04':
+  unofficial_names: Sai Kung
+  translations:
+    en: Sai Kung
+    zh: 離島區
+  geo:
+    latitude: 22.38143
+    longitude: 114.27052
+    min_latitude: 22.38143
+    min_longitude: 114.27052
+    max_latitude: 22.38143
+    max_longitude: 114.27052
+  name: Sai Kung
+'05':
+  unofficial_names: Sha Tin
+  translations:
+    en: Sha Tin
+    zh: 沙田區
+  geo:
+    latitude: 22.38715
+    longitude: 114.19534
+    min_latitude: 22.38715
+    min_longitude: 114.19534
+    max_latitude: 22.38715
+    max_longitude: 114.19534
+  name: Sha Tin
+'06':
+  unofficial_names: Tai Po
+  translations:
+    en: Tai Po
+    zh: 大埔區
+  geo:
+    latitude: 22.45085
+    longitude: 114.16422
+    min_latitude: 22.45085
+    min_longitude: 114.16422
+    max_latitude: 22.45085
+    max_longitude: 114.16422
+  name: Tai Po
+'07':
+  unofficial_names: Tsuen Wan
+  translations:
+    en: Tsuen Wan
+    zh: 荃灣區
+  geo:
+    latitude: 22.36281
+    longitude: 114.12907
+    min_latitude: 22.36281
+    min_longitude: 114.12907
+    max_latitude: 22.36281
+    max_longitude: 114.12907
+  name: Tsuen Wan
+'08':
+  unofficial_names: Tuen Mun
+  translations:
+    en: Tuen Mun
+    zh: 屯門區
+  geo:
+    latitude: 22.39211
+    longitude: 113.97011
+    min_latitude: 22.39211
+    min_longitude: 113.97011
+    max_latitude: 22.39211
+    max_longitude: 113.97011
+  name: Tuen Mun
+'09':
+  unofficial_names: Yuen Long
+  translations:
+    en: Yuen Long
+    zh: 元朗區
+  geo:
+    latitude: 22.44559
+    longitude: 114.02218
+    min_latitude: 22.44559
+    min_longitude: 114.02218
+    max_latitude: 22.44559
+    max_longitude: 114.02218
+  name: Yuen Long
+'10':
+  unofficial_names: Kowloon City
+  translations:
+    en: Kowloon City
+    zh: 九龍城區
+  geo:
+    latitude: 22.32824
+    longitude: 114.19155
+    min_latitude: 22.32824
+    min_longitude: 114.19155
+    max_latitude: 22.32824
+    max_longitude: 114.19155
+  name: Kowloon City
+'11':
+  unofficial_names: Kwun Tong
+  translations:
+    en: Kwun Tong
+    zh: 觀塘區
+  geo:
+    latitude: 22.31326
+    longitude: 114.22581
+    min_latitude: 22.31326
+    min_longitude: 114.22581
+    max_latitude: 22.31326
+    max_longitude: 114.22581
+  name: Kwun Tong
+'12':
+  unofficial_names: Sham Shui Po
+  translations:
+    en: Sham Shui Po
+    zh: 深水埗區
+  geo:
+    latitude: 22.33074
+    longitude: 114.16221
+    min_latitude: 22.33074
+    min_longitude: 114.16221
+    max_latitude: 22.33074
+    max_longitude: 114.16221
+  name: Sham Shui Po
+'13':
+  unofficial_names: Wong Tai Sin
+  translations:
+    en: Wong Tai Sin
+    zh: 黃大仙區
+  geo:
+    latitude: 22.33353
+    longitude: 114.19686
+    min_latitude: 22.33353
+    min_longitude: 114.19686
+    max_latitude: 22.33353
+    max_longitude: 114.19686
+  name: Wong Tai Sin
+'14':
+  unofficial_names: Yau Tsim Mong
+  translations:
+    en: Yau Tsim Mong
+    zh: 油尖旺區
+  geo:
+    latitude: 22.32138
+    longitude: 114.17268
+    min_latitude: 22.32138
+    min_longitude: 114.17268
+    max_latitude: 22.32138
+    max_longitude: 114.17268
+  name: Yau Tsim Mong
+'15':
+  unofficial_names: Central and Western
+  translations:
+    en: Central and Western
+    zh: 中西區
+  geo:
+    latitude: 22.28666
+    longitude: 114.15497
+    min_latitude: 22.28666
+    min_longitude: 114.15497
+    max_latitude: 22.28666
+    max_longitude: 114.15497
+  name: Central and Western
+'16':
+  unofficial_names: Eastern
+  translations:
+    en: Eastern
+    zh: 東區
+  geo:
+    latitude: 22.28411
+    longitude: 114.22414
+    min_latitude: 22.28411
+    min_longitude: 114.22414
+    max_latitude: 22.28411
+    max_longitude: 114.22414
+  name: Eastern
+'17':
+  unofficial_names: Southern
+  translations:
+    en: Southern
+    zh: 南區
+  geo:
+    latitude: 22.24725
+    longitude: 114.15884
+    min_latitude: 22.24725
+    min_longitude: 114.15884
+    max_latitude: 22.24725
+    max_longitude: 114.15884
+  name: Southern
+'18':
+  unofficial_names: Wan Chai
+  translations:
+    en: Wan Chai
+    zh: 灣仔區
+  geo:
+    latitude: 22.27968
+    longitude: 114.17168
+    min_latitude: 22.27968
+    min_longitude: 114.17168
+    max_latitude: 22.27968
+    max_longitude: 114.17168
+  name: Wan Chai
+
