@@ -29,5 +29,5 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 config :iso3166,
-  countries: [:hk],
+  countries: [:hk, :mo],
   locales: [:en, :zh_hk]
