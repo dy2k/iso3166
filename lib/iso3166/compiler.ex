@@ -39,13 +39,16 @@ defmodule Iso3166.Compiler do
     data_path("#{type}/#{file}.yaml")
     |> :yamerl.decode_file
     |> List.first
-    |> Enum.reduce(%{}, fn({id, result}, records) ->
-      case type do
-        'countries' -> records = convert_to(result, %Country{})
-        'subdivisions' -> Map.put(records, id, convert_to(result, %Subdivision{}))
-        _ -> Map.put(records, id, convert_to(result, %{}))
-      end
-    end)
+    |> case do
+      :null -> []
+      data -> Enum.reduce(data, %{}, fn({id, result}, records) ->
+        case type do
+          'countries' -> records = convert_to(result, %Country{})
+          'subdivisions' -> Map.put(records, id, convert_to(result, %Subdivision{}))
+          _ -> Map.put(records, id, convert_to(result, %{}))
+        end
+      end)
+    end
   end
 
   defp process_translation_file(type, file) do
