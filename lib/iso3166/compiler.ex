@@ -43,7 +43,7 @@ defmodule Iso3166.Compiler do
       :null -> []
       data -> Enum.reduce(data, %{}, fn({id, result}, records) ->
         case type do
-          'countries' -> records = convert_to(result, %Country{})
+          'countries' -> convert_to(result, %Country{})
           'subdivisions' -> Map.put(records, id, convert_to(result, %Subdivision{}))
           _ -> Map.put(records, id, convert_to(result, %{}))
         end

@@ -28,7 +28,7 @@ defmodule Iso3166.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:yamerl, "~> 0.4"},
-     {:poison, "~> 2.2"},
+     {:poison, "~> 2.0"},
      {:ex_doc, "~> 0.14", only: :dev}]
   end
 end

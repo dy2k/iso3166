@@ -6,7 +6,7 @@ defmodule Iso3166 do
   @before_compile(Iso3166.Compiler)
 
   def countries(country) when country == :all do
-    Enum.map(countries, fn({_, country}) -> country end)
+    Enum.map(countries(), fn({_, country}) -> country end)
   end
 
   @doc """
@@ -21,7 +21,7 @@ defmodule Iso3166 do
       "Hong Kong"
   """
   def countries(country) when is_atom(country) do
-    countries |> Map.get(country)
+    countries() |> Map.get(country)
   end
 
   @doc """
@@ -32,7 +32,7 @@ defmodule Iso3166 do
       18
   """
   def subdivisions(country) when is_atom(country) do
-    subdivisions |> Map.get(country)
+    subdivisions() |> Map.get(country)
   end
 
   def subdivisions(country, subdivision) when subdivision == :all do
@@ -49,11 +49,11 @@ defmodule Iso3166 do
       "Southern"
   """
   def subdivisions(country, subdivision) when is_atom(country) do
-    subdivisions |> Map.get(country) |> Map.get(subdivision |> to_char_list)
+    subdivisions() |> Map.get(country) |> Map.get(subdivision |> to_char_list)
   end
 
   def translate([%Country{} | _] = countries, locale) when is_atom(locale) do
-    lang = translations.countries |> Map.get(locale)
+    lang = translations().countries |> Map.get(locale)
     Enum.map(countries, &(Map.put(&1, :name, lang |> Map.get(&1.alpha2 |> String.downcase |> String.to_atom))))
   end
 
@@ -69,7 +69,7 @@ defmodule Iso3166 do
   end
 
   def translations([%Country{} | _] = countries, locale) when is_atom(locale) do
-    Enum.map(countries, &(translations.countries |> Map.get(locale) |> Map.get(&1.alpha2 |> String.downcase |> String.to_atom)))
+    Enum.map(countries, &(translations().countries |> Map.get(locale) |> Map.get(&1.alpha2 |> String.downcase |> String.to_atom)))
   end
 
   def translations([%Subdivision{} | _] = subdivisions, locale) when is_atom(locale) do
@@ -119,7 +119,7 @@ defmodule Iso3166 do
   def find_by(type, field, args) when is_binary(type) and is_binary(field) and is_list(args) do
     case type do
       "country" -> case args do
-        [value] -> Enum.filter_map(countries, fn({_, country}) -> 
+        [value] -> Enum.filter_map(countries(), fn({_, country}) -> 
           Map.get(country, field |> String.to_atom) == value end, fn({_, country}) -> country end)
         _ -> raise ArgumentError, message: "for attribute-based finder method"
       end
@@ -165,7 +165,7 @@ defmodule Iso3166 do
   def list_by(type, field, args) when is_binary(type) and is_binary(field) and is_list(args) do
     case type do
       "country" -> case args do
-        [] -> Enum.map(countries, fn({_, country}) -> Map.get(country, field |> String.to_atom) end)
+        [] -> Enum.map(countries(), fn({_, country}) -> Map.get(country, field |> String.to_atom) end)
         [filter, value] -> Enum.map(find_by(type, to_string(filter), [value]), &(Map.get(&1, field |> String.to_atom)))
         _ -> raise ArgumentError, message: "for attribute-based lister method"
       end
